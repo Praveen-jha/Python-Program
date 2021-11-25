@@ -188,5 +188,107 @@ print()
 newlist7 = [x if x != "banana" else "orange" for x in fruits]       # it will return 'orange' insted of 'banana'
 print(newlist7)
 
+# Sort List Alphanumerically
+# Sort the list alphabetically:
+
+fruits1 = ["orange","mango","kiwi","pineapple","banana"]
+fruits1.sort()
+print(fruits1)
+print()
+
+# Sort the list numerically:
+
+numberList = [100,40,20,70,3,50,6]
+numberList.sort()
+print(numberList)
+print()
+
+# Sort the list descending:
+
+fruits1.sort(reverse=True)
+print(fruits1)
+
+# Sort the list descending:
+
+numberList.sort(reverse=True)
+print(numberList)
+print()
+
+# Customize Sort Function
+# The function will return a number that will be used to sort the list (the lowest number first):
+
+def myfunction(n):
+    return abs(n-50)
+numberList1 = [100,30,5,60,3]
+numberList1.sort(key=myfunction)
+print(numberList1)
+print()
+
+# By default the sort() method is case sensitive, resulting in all capital letters being sorted before lower case letters:
+
+fruits2 = ["banana","Orange","Kiwi","cherry"]
+fruits2.sort()
+print(fruits2)
+print()
+
+# The reverse() method reverses the current sorting order of the elements.
+
+fruits2.reverse()
+print(fruits2)
+print()
+
+ # Copy Lists
+
+fruits3 = fruits2.copy()       # it will copy all items of fruits2 in fruits3 list
+print(fruits3)
+print()
+
+# Make a copy of a list with the list() method:
+
+fruits4 = list(fruits3)
+print(fruits4)
+print()
+
+# Join Two Lists
+
+joinList = ["a","b","c"]
+joinList1 = [1,2,3]
+joinList2 = joinList+joinList1
+print(joinList2)
+print()
+
+# Append joinList1 into joinJist1:
+
+for x in joinList1:
+    joinList.append(x)
+print(joinList)
+print()
+
+# Use the extend() method to add joinList1 at the end of joinList:
+
+joinList.extend(joinList1)
+print(joinList)
+print()
+
+# Python has a set of built-in methods that you can use on lists.
+
+# append()   ----->	Adds an element at the end of the list
+# clear()	----->  Removes all the elements from the list
+# copy()	---->  Returns a copy of the list
+# count()	---->  Returns the number of elements with the specified value
+# extend()	---->   Add the elements of a list (or any iterable), to the end of the current list
+# index()	------>  Returns the index of the first element with the specified value
+# insert()	---->  Adds an element at the specified position
+# pop()	-----> Removes the element at the specified position
+# remove()	-----> Removes the item with the specified value
+# reverse()	------> Reverses the order of the list
+# sort()	----->  Sorts the list
+
+
+
+
+
+
+
 
 

@@ -127,4 +127,77 @@ print(Tuple)
 del Tuple
 # print(Tuple)    # this will show an error
 
+# When we create a tuple, we normally assign values to it. This is called "packing" a tuple:
+fruits = ("apple","banana","cherry")
+
+# But, in Python, we are also allowed to extract the values back into variables. This is called "unpacking":
+# Unpacking a tuple:
+(green, yellow, red) = fruits
+print(green)
+print(yellow)
+print(red)
+print()
+
+# Assign the rest of the values as a list called "red":
+fruits1 = ("apple","banana","cherry","strawberry","raspberry")
+(green1, yellow1, *red1) = fruits
+print(green1)
+print(yellow1)
+print(red1)
+print()
+
+# Add a list of values the "yellow" variable:
+
+(green2, *yellow2, red2) = fruits1
+print(green2)
+print(yellow2)
+print(red2)
+print()
+
+# Loops in Tuples
+
+# Iterate through the items and print the values:
+
+fruits2 = ("apple","banana","cherry")
+for x in fruits2:
+    print(x)
+print()
+
+
+# Loop Through the Index Numbers
+for i in range(len(fruits2)):
+    print(i," = ",fruits2[i])
+print()
+
+# Using a While Loop
+i = 0
+while i < len(fruits2):
+    print(i," = ",fruits2[i])
+    i = i+1
+print()
+
+# To join two or more tuples you can use the + operator:
+
+tple1 = ("a","b","c")
+tple2 = (1,2,3)
+tple3 = tple1+tple2
+print(tple3)
+print()
+
+# If you want to multiply the content of a tuple a given number of times, you can use the * operator:
+tple4 = ("apple","banana","cherry")
+mytple = tple4*2
+print(mytple)
+print()
+
+# Python has two built-in methods that you can use on tuples.
+
+# count()	  ------>   Returns the number of times a specified value occurs in a tuple
+# index()	    ------->    Searches the tuple for a specified value and returns the position of where it was found
+
+
+
+
+
+
 

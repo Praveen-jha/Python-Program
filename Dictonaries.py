@@ -111,3 +111,55 @@ print()
 if "year" in my:
      print("yes, 'year' is one of the keys in the my dictonary")
 
+# Change the "year" to 2018:
+
+thisdict["Year"] = 2018
+print(thisdict)
+print()
+
+# Update the "year" of the car by using the update() method:
+
+thisdict.update({"year":2021})
+
+print(thisdict)
+print()
+
+# Add Dictionary Items
+
+thisdict["color"] = "red"
+print(thisdict)
+print()
+
+# Add a color item to the dictionary by using the update() method:
+
+thisdict.update({"color":"green"})
+print(thisdict)
+print()
+
+# The pop() method removes the item with the specified key name:
+
+thisdict.pop("model")       # this will remove the 'model'
+print(thisdict)
+print()
+
+# The popitem() method removes the last inserted item (in versions before 3.7, a random item is removed instead):
+
+thisdict.popitem()      # this will remove the last item from the dictonary
+print(thisdict)
+print()
+
+# The del keyword removes the item with the specified key name:
+
+del thisdict["year"]
+print(thisdict)
+print()
+
+# The clear() method empties the dictionary:
+
+print(thisdict1)
+thisdict1.clear()   # it will clear the dictonaries
+print(thisdict1)
+
+
+
+
